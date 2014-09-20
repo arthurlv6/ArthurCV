@@ -1,0 +1,165 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.img-extension{
+    border-radius: 6px;
+    box-shadow: 0px 0px 6px #999;
+    height:130px;
+    width:150px; 
+    margin:3px;
+    cursor:pointer;
+}
+
+.img-extension:hover {
+    box-shadow: 1px 1px 9px black;
+}
+
+.img-friend{
+    border-radius: 6px;
+    box-shadow: 0px 0px 6px #999;
+    margin:10px;
+    border:5px solid rgb(161, 166, 233)
+}
+
+.img-friend:hover {
+    box-shadow: 1px 1px 9px black;
+}
+.carousel-ctrl {
+  position: absolute;
+  top: 190px;
+  bottom: 0;
+  left: 0;
+  width: 10%;
+  font-size: 70px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  height:100px;
+}
+
+.carousel-ctrl.left {
+  background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0), color-stop(rgba(0, 0, 0, 0.0001) 100%));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+
+.carousel-ctrl.right {
+  right: 0;
+  left: auto;
+  background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 0, 0.5) 100%));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+
+.carousel-ctrl:hover,
+.carousel-ctrl:focus {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.carousel-ctrl .icon-prev,
+.carousel-ctrl .icon-next,
+.carousel-ctrl .glyphicon-chevron-left,
+.carousel-ctrl .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+
+.carousel-ctrl .icon-prev,
+.carousel-ctrl .icon-next {
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  font-family: serif;
+}
+
+.carousel-ctrl .icon-prev:before {
+  content: '\2039';
+}
+
+.carousel-ctrl .icon-next:before {
+  content: '\203a';
+}
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+.facebook {
+	background: url(../images/icons.png) no-repeat;
+	height: 26px;
+	width: 12px;
+    color:black;
+}
+.connect{
+    display: block;
+float: left;
+height: 26px;
+margin: 12px 10px 0;
+text-indent: -99999px;
+}
+.twitter {
+	background: url(../images/icons.png) no-repeat 0 -35px;
+	width: 32px;
+}
+.googleplus {
+	background: url(../images/icons.png) no-repeat 0 -97px;
+	width: 26px;
+}
+.facebook:hover {
+	background: url(../images/icons.png) no-repeat -12px 0;
+}
+.twitter:hover {
+	background: url(../images/icons.png) no-repeat 0 -61px;
+}
+.googleplus:hover {
+	background: url(../images/icons.png) no-repeat 0 -123px;
+}
