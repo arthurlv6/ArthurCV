@@ -9,6 +9,7 @@ namespace CV.Controllers
 {
     public class HomeController : Controller
     {
+        [OutputCache(Duration = 36000)]
         public ActionResult Index()
         {
            
