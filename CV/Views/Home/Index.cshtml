@@ -1,46 +1,49 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-<div id="myCarousel" class="carousel slide hidden-sm hidden-xs hidden-md hidden-print" style="min-width:1280px;">
+<div id="myCarousel" class="carousel slide hidden-sm hidden-xs hidden-md hidden-print " style="min-width:1280px;">
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1" class=""></li>
         <li data-target="#myCarousel" data-slide-to="2" class=""></li>
         <li data-target="#myCarousel" data-slide-to="3" class=""></li>
     </ol>
-    <div class="carousel-inner ">
-        <div class="active item" data-id="01" style="text-align:center;">
+    <div class="carousel-inner text-center">
+        <div class="active item text-center" data-id="01">
             <img src="/images/bg01.jpg" style="height:500px;width:100%" alt="">
-            <div id="01Header" class="carousel-caption" style="position: absolute;top:-240px;width:945px;">
-                <div id="textDisplay" style="width: 100%; background-color: rgba(0, 0, 0, 0.498039); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 180px; padding: 10px;">
-                    <table style="width: 100%">
-                        <tbody>
-                            <tr>
-                                <td style="text-align: center;vertical-align: middle;width: 150px;height: 160px;">
-                                    <img src="/Images/Arthurnew.png" height="120" style="border-width: 0px; -ms-border-radius: 60px; border-radius: 60px;">
-                                    <p style="color: rgb(218, 165, 32);">Arthur Lu</p>
-                                </td>
-                                <td style="text-align:left;">
-                                    <h5 style="color: rgb(218, 165, 32);">Introduction: My name is Arthur Qingjiang Lv. I am a .Net developer working for Manchestermore & More Company. I graduated from Jilin University of China and I have a master degree of the computer science. My major is the computer engineering. I have be involved in IT industry for more than 10 years and I also have three years’ local working experience in New Zealand. </h5>
-                                    <h5 style="color: rgb(218, 165, 32);"><img src="/Images/email.png" style="border-width: 0px;margin-right: 5px;">Email:arthur.lv6@gmail.com <img src="/Images/phone.png" style="border-width: 0px;margin-right: 5px;">Phone:021-057-8463 (anytime available)</h5>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <div class="row text-center">
+                <div id="01Header" class="carousel-caption" style="position: absolute;top:-240px;">
+                    <div id="textDisplay" style="width: 100%; background-color: rgba(0, 0, 0, 0.498039); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 180px; padding: 10px;">
+                        <table style="width: 100%">
+                            <tbody>
+                                <tr>
+                                    <td style="text-align: center;vertical-align: middle;width: 150px;height: 160px;">
+                                        <img src="/Images/Arthurnew.png" height="120" style="border-width: 0px; -ms-border-radius: 60px; border-radius: 60px;">
+                                        <p style="color: rgb(218, 165, 32);">Arthur Lu</p>
+                                    </td>
+                                    <td style="text-align:left;">
+                                        <h5 style="color: rgb(218, 165, 32);">Introduction: My name is Arthur Qingjiang Lv. I am a <a style="cursor:pointer" onclick="showMyCertification(this)" data-src="/images/certifications/mcp.jpg">Microsoft Certified ASP.NET MVC Web Application&amp;Programming in C# Professional</a> working for Manchestermore & More Company. I graduated from Jilin University of China and I have a master degree of the computer science. My major is the computer engineering. I have be involved in IT industry for more than 10 years and I also have three years’ local working experience in New Zealand. </h5>
+                                        <h5 style="color: rgb(218, 165, 32);"><img src="/Images/email.png" style="border-width: 0px;margin-right: 5px;">Email:arthur.lv6@gmail.com <img src="/Images/phone.png" style="border-width: 0px;margin-right: 5px;">Phone:021-057-8463 (anytime available)</h5>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="01Video" class="carousel-caption" style="position: absolute;bottom:-190px;">
+                    <img src="/images/video/Inventory.jpg" onclick="showVideo(this)" class="img-extension" data-id="ks6BOcdNCRk">
+                    <img src="/images/video/gv.jpg" onclick="showVideo(this)" class="img-extension" data-id="4TEOEhJOGrc" data-description="This system was born for the 'hire to purchase' retail industry management system. In New Zealand many retail companies offer wonderful products and allow their customers to pay for it weekly or fortnightly. So you can imagine they have thousands of customers and contracts need to handle and how to effectively manage their accounts is a big challenge for them. Therefore my system was born and it perfectly solved those problems. The system enable retailers to trace customers' payment plans and notice them to delivery or repossess their products. The system mainly include three part named customer maintenance, contract management and bank statement management. The contract management is key of the system and others are around it because it associate with other parts like customer, statement, products, repossession, delivery and so on. Finally, my customer (company website: www.goodvalue.co.nz) has already used this system for a while and they are happy and satisfied in this practical and powerful system. ">
+                    <img src="/images/video/OnlineShopping.jpg" onclick="showVideo(this)" class="img-extension" data-id="in5t6vGUhhA">
+                    <img src="/images/video/android.jpg" onclick="showVideo(this)" class="img-extension" data-id="2_x5-sa4QqA">
+                    <img src="/images/video/vineyard.jpg" onclick="showVideo(this)" class="img-extension" data-id="0C9GlU0UUJQ">
+                    <img src="/images/video/network.jpg" onclick="showVideo(this)" class="img-extension" data-id="7AEgp-aprS0">
+                </div>
+                <div class="carousel-caption">
+                    <h4>My introduction and video shows</h4>
+                    <p></p>
                 </div>
             </div>
-            <div id="01Video" class="carousel-caption" style="position: absolute;bottom:-190px;width:955px;">
-                <img src="/images/video/Inventory.png" onclick="showVideo(this)" class="img-extension" data-id="ks6BOcdNCRk">
-                <img src="/images/video/gv.png" onclick="showVideo(this)" class="img-extension" data-id="4TEOEhJOGrc" data-description="This system was born for the 'hire to purchase' retail industry management system. In New Zealand many retail companies offer wonderful products and allow their customers to pay for it weekly or fortnightly. So you can imagine they have thousands of customers and contracts need to handle and how to effectively manage their accounts is a big challenge for them. Therefore my system was born and it perfectly solved those problems. The system enable retailers to trace customers' payment plans and notice them to delivery or repossess their products. The system mainly include three part named customer maintenance, contract management and bank statement management. The contract management is key of the system and others are around it because it associate with other parts like customer, statement, products, repossession, delivery and so on. Finally, my customer (company website: www.goodvalue.co.nz) has already used this system for a while and they are happy and satisfied in this practical and powerful system. ">
-                <img src="/images/video/OnlineShopping.png" onclick="showVideo(this)" class="img-extension" data-id="in5t6vGUhhA">
-                <img src="/images/video/android.png" onclick="showVideo(this)" class="img-extension" data-id="2_x5-sa4QqA">
-                <img src="/images/video/vineyard.png" onclick="showVideo(this)" class="img-extension" data-id="0C9GlU0UUJQ">
-                <img src="/images/video/network.png" onclick="showVideo(this)" class="img-extension" data-id="7AEgp-aprS0">
-            </div>
-            <div class="carousel-caption">
-                <h4>My introduction and video shows</h4>
-                <p></p>
-            </div>
+          
         </div>
         <div class="item" data-id="02">
             <img src="/images/bg02.jpg" style="height:500px;width:100%" alt="">
@@ -289,14 +292,14 @@
 
         </div>
         <div class="item" data-id="04" style="text-align:center;">
-            <img src="/images/bg05.jpg" style="height:500px;width:100%" alt="">
+            <img src="/images/bg04.jpg" style="height:500px;width:100%" alt="">
             <div id="philosophy" class="carousel-caption" style="height: 350px; top: 80px; text-align: left; color: rgb(255, 215, 0)">
                 <h1>My development philosophy</h1>
                 <h3>
                     1, Customers' evaluation is the only standard for the developer. Never forget your manager is your kind of customer.
                 </h3>
                 <h3>
-                    2, Try to use new technique meanwhile fresh and solidify basic concepts.
+                    2, Try to use new techniques while freshing and solidifying basic concepts.
                 </h3>
                 <h3>
                     3, If you care enough, everything is possible. The more projects that you develop, the more experience you will get for yourself not others.
@@ -314,38 +317,80 @@
 <div class="container body-content">
     <div class="row">
         <div class="col-md-4">
-
-            <h2 id="Test">My skills</h2>
+            <h3 id="Test">Technique skills</h3>
             <blockquote>
                 <p class="text-info">
                     <small>
-                        I am proficient in MS.Net framework including
+                        I am proficient in MS.Net framework including ASP.NET, design pattern,
                         C#, Entity framework, MVC, WEB API2, Web form, Silverlight, WPF, WCF, Web Services, WindowsAzure Server and relevant technique such as HTML5, AJAX, jQuery, Javascript, CSS, Bootstrap and the like.
                     </small>
                 </p>
                 <p class="text-info">
                     <small>
-                        I am good at using Xamarina to develop IOS, Android and Windows phone appliations.
+                        I am good at using Xamarin.Form to develop IOS, Android and Windows phone appliations.
                     </small>
                 </p>
                 <p class="text-info">
                     <small>
-                        Many years working experience in databases for instance SQL SERVER2008 2012, ORACLE and SYBASE.
+                        Many years working experience in databases for instance SQL SERVER, ORACLE.
+                    </small>
+                </p>
+            </blockquote>
+            <h3 id="Test">Other skills</h3>
+            <blockquote>
+                <p class="text-info">
+                    <small>
+                        I fully understand software developing methods(SDLC) for example Agile (XP) and scrum.
                     </small>
                 </p>
                 <p class="text-info">
                     <small>
-                        I fully understand software developing methods(SDLC) for example Agile (XP) and scrum. I also deeply understand design pattern.
+                        I am good at using Github as my source control server and Trello as my project management tools.
+                    </small>
+                </p>
+                
+            </blockquote>
+            <h3>Industry experience</h3>
+            <blockquote>
+                <p class="text-info">
+                    <small>
+                        Retail inventory management and online trade system.
+                    </small>
+                </p>
+                <p class="text-info">
+                    <small>
+                        Hire-to-purchase management system.
+                    </small>
+                </p>
+                <p class="text-info">
+                    <small>
+                        Freight integration system.
+                    </small>
+                </p>
+                <p class="text-info">
+                    <small>
+                        CRM, ERP for manufactures.
+                    </small>
+                </p>
+                <p class="text-info">
+                    <small>
+                        Apartment property management system for government.
+                    </small>
+                </p>
+                <p class="text-info">
+                    <small>
+                        Hospital and health insurance management systems.
                     </small>
                 </p>
             </blockquote>
         </div>
         <div class="col-md-4">
-            <h2>Live online show</h2>
+
+            <h3>Live online show</h3>
             <blockquote>
                 <a href="http://flexibleinventory.com/" target="_blank">•Inventory management system (MVC)</a>
                 <br />
-                <a href="http://www.aplushamper.co.nz/" target="_blank">•Online shopping for APlushamper (MVC)</a>
+                <a href="http://ishoppersnz.com/" target="_blank">•Online trade website (MVC)</a>
                 <br />
                 <a href="http://example.flexibleinventory.com/" target="_blank">•Online shopping Demo (MVC+Web API 2.0)</a>
                 <br />
@@ -354,15 +399,106 @@
                 <a href="http://sky.ishoppersnz.com/netsky.aspx" target="_blank">•Netsky (Silverlight)</a>
                 <br />
             </blockquote>
-            <h2>Smartphone Application</h2>
+            <h3>Smartphone Application</h3>
             <blockquote>
                 <a href="https://play.google.com/store/apps/details?id=com.monitor.admin&hl=en" target="_blank">•Monitor For Admin (Xamarin.Form+Web API2.0)</a>
                 <br />
             </blockquote>
-        </div>
-        <div class="col-md-4">
-            <h2>Qualification</h2>
+            <h3>Github Open source</h3>
             <blockquote>
+                <a href="https://github.com/arthurlv6/MVC5" target="_blank">•ASP.NET WEB APP(MVC5+ Entity Frame work Code first+Identity2)</a>
+                <br />
+                <ol style="font-size: font-size: 80%;">
+                    <li>
+                        <small>
+                            Global Server Exception control in Global.asax.cs
+                        </small>
+                    </li>
+                    <li>
+                        <small>
+                            Exception control for controllers
+                        </small>
+                    </li>
+                    <li>
+                        <small>
+                            To get specific file by overriding ActionResult, take getting excel file for example.</small>
+                    </li>
+                    <li>
+                        <small>
+                            Global action filter for IP restriction
+                        </small>
+                    </li>
+
+                    <li>
+                        <small>
+                            Data cache usage in management controller
+                        </small>
+                    </li>
+                    <li>
+                        <small>
+                            Implement Dependence injection by using structureMap
+                        </small>
+                    </li>
+                    <li>
+                        <small>
+                            Universal Search and List template
+                        </small>
+                    </li>
+                    <li>
+                        <small>
+                            Image show
+                        </small>
+                    </li>
+                    <li>
+                        <small>
+                            Async feature in the controller and the respository
+                        </small>
+                    </li>
+                    <li>
+                        <small>
+                            Using justmock to fully test the edit function.
+                        </small>
+                    </li>
+                </ol>
+                <a href="https://github.com/arthurlv6/MVC5/tree/master/SolutionDemo/AngularClient" target="_blank">WebApi+AngularJS APP</a>
+                <br />
+                <ol style="font-size: font-size: 80%;">
+                    <li>
+                        <small>
+                            Authentication and Authorization
+                        </small>
+                    </li>
+                    <li>
+                        <small>
+                            Search by condition
+                        </small>
+                    </li>
+                    <li>
+                        <small>
+                            Simple add data to database
+                        </small>
+                    </li>
+                </ol>
+            </blockquote>
+        </div>
+
+        <div class="col-md-4">
+            <h3>Qualification</h3>
+            <blockquote>
+                <p class="text-info">
+                    <small>
+                        <a style="cursor:pointer" onclick="showMyCertification(this)" data-src="/images/certifications/cprogramming.jpg">
+                            31 March 2015：Microsoft Certified Professional of Programming in C#
+                        </a>
+                    </small>
+                </p>
+                <p class="text-info">
+                    <small>
+                        <a style="cursor:pointer" onclick="showMyCertification(this)" data-src="/images/certifications/mvcweb.jpg">
+                            1 March 2015：Microsoft Certified Professional of ASP.NET MVC Web Applications
+                        </a>
+                    </small>
+                </p>
                 <p class="text-info">
                     <small>03.2004 – 12.2006：Master of Software Engineering in Jilin University, China</small>
                 </p>
@@ -393,10 +529,16 @@
 
     </p>
 </div>
+<div id="myCertification">
+    <img id="certificationImage" style="width:850px;height: 470px;"/>
+    <div class="text-center">
+        <a target="blank" href="https://mcp.microsoft.com/Anonymous//Transcript/Validate">Online check link Transcript ID (1153259) and Access Code (ARTHURMCP)</a>
+    </div>
+</div>
 <script>
     $(function () {
         $('#myCarousel').carousel({
-            interval: 20000
+            interval: 30000
         }).on('slid', function (e) {
             var xx = $(this);
             var id = xx.find('.active').attr("data-id");
@@ -453,6 +595,13 @@
             width: 900,
             modal: true
         });
+        $("#myCertification").dialog({
+            autoOpen: false,
+            resizable: false,
+            height: 560,
+            width: 900,
+            modal: true
+        });
     });
     function showVideo(e) {
         $("#showVideo").attr("src", "http://www.youtube.com/v/" + $(e).attr("data-id"));
@@ -462,6 +611,11 @@
         }
         $("#videoDescription").text(des);
         $('#myVideo').dialog("open");
+    }
+    function showMyCertification(e) {
+        //alert
+        $("#certificationImage").attr("src", $(e).attr("data-src"));
+        $('#myCertification').dialog("open");
     }
     function controlShowTip(id) {
         if ($(id).find("img").attr("src") == '/Images/triangleForOpen.png') {
